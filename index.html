@@ -1,12 +1,68 @@
-<!DOCTYPE html> 
-<html lang="en">
-    <head>
+<!DOCTYPE html> <!--This is a comment-->
+<html lang="en"><!--This is telling the software that we are coding in english-->
 
-
-    </head>
-    <body>
-
+    <!--The head is for all the data things that viewrs of the website can't see-->
+    <head><!--This is
+            a double line comment-->
+        <meta charset="UTF-8"> <!--This tells the software what types of alphabet letters and symbols we are using-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--This is telling it what types of browsers it is compatible with. 
+        Also why we cant use firefox as a browser so we work with chrome-->
+        <meta name="viewport" content="width-device-width, initial-scale-1.0"> <!--This is telling it that the viewport (or the size of 
+            the website) to be the same size as the screen of the device you are viewing the website on--> 
+        <meta name="keywords" content="html, CSS, Templates, Bootstrap"> <!--This is keywords that you need to add to make it easy to 
+            find your website when searching these keywords online. Almost like how tags work on social media-->
+        <meta name="author" content="Samantha Schultz 231012"> 
         
+         <!--The order you would link you pages is: Bootstrap, Javascript, Google font that you wanna use, CSS-->        
+          <link rel="stylesheet" href="css/main.css"> <!--rel refers to the relationship the file you link have with the file you are 
+            working on. CSS is the stylesheet we are working with. You should use href whenever you are linking a file, it tells it 
+            where to find it.-->
+
+         <!--This is all we need in our head section for now-->
+    </head>
+
+    <!--The body is for all the things the viewer of the website can see-->
+    <body>
+        <!--Structural tags: nav, header, section, footer-->
+         <nav> <!--This will look like a bullet point list until we add CSS next week-->
+            <ol> <!--Ordered list tag-->
+                <li>Home</li><!--1st Listed item tag-->
+                <li>About Us </li><!--2nd Listed item tag-->
+                <li>Conatact Us</li><!--3rd Listed item tag-->
+            </ol>
+            <ul> <!--Unordered list tag--> <!--Anchor tags (a) is used to make the menu a working, clickable menu. 
+                Anchor tags must be one the inside of the listed item tag-->
+                <li><a href="index.html">Home</a></li><!--1st Listed item tag-->
+                <li><a href="pages/about.html">About Us</a></li><!--2nd Listed item tag-->
+                <li><a href="pages/contact.html">Contact Us</a></li><!--3rd Listed item tag-->
+            </ul>
+         </nav>
+
+         <header>
+            <img src="assets/loki.jpeg" width="100%"> <!--src is used for pics instead of href not sure why tho. Also If you close the tag 
+                right after the image, the image will most probably be ABSOLUTELY FRICKEN MASSIVE!!!! So you must add the width, 
+                this image then also sizes up and down depending on the size of the screen of the device you are viewing the browser 
+                on. If you want the image to only be half the size of the screen use 50%, etc.-->
+         </header>
+
+         <section>
+            <h1>This is a heading 1</h1>
+            <h2>This is a heading 2</h2>
+            <h3>This is a heading 3</h3>
+            <h4>This is a heading 4</h4>
+            <h5>This is a heading 5</h5>
+            <h6>This is a heading 6</h6>
+            <p>This is a paragraph this is a paragraph this is a paragraph this is a paragraph 
+                this is a paragraph this is a paragraph this is a paragraph this is a paragraph 
+                this is a paragraph this is a paragraph this is a paragraph this is a paragraph 
+                this is a paragraph this is a paragraph this is a paragraph this is a paragraph </p>
+            <button type="button" onclick="location.href =  'pages/about.html';">Click Me</button><!--type='button" tells it that it 
+                should just be a normal click button'-->
+         </section>
+
+         <footer><!--A footer works and look like everything else on a page but it should always be that last thing you put on a page-->
+            &copy;<p>Copyright HTML Template</p>
+         </footer>
     </body>
 
  
